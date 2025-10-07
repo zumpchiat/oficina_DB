@@ -31,3 +31,9 @@ insert into oficina.servico (nome, valor, descricao) values
 ('Troca de Embreagem', 990.00, 'Substituição do kit de embreagem e ajuste do pedal.' ),
 ('Polimento de Faróis', 85.00, 'Restauração da transparência das lentes dos faróis.' );
 
+-- POPULATE TABLE OS_SERVIÇO
+insert into oficina.os_servico( id_ordemServico, id_servico, horas_trabalhadas) values
+	(1, 3, 2),
+    (1, 4, 3),
+    (2, 1, 1);
+

@@ -50,6 +50,16 @@ create table oficina.ordemServico(
     constraint fk_veiculo foreign key(id_veiculo) references veiculo(id_veiculo)
 );
 
+-- CREATE TABLE os_servico
+create table oficina.os_servico(
+	id_os_servico int auto_increment primary key,
+    id_ordemServico int not null,
+    id_servico int not null,
+    horas_trabalhadas float
+);
+
+
+ALTER TABLE oficina.os_servico auto_increment=1;
 ALTER TABLE oficina.servico auto_increment=1;
 ALTER TABLE oficina.ordemServico auto_increment=1;
 ALTER TABLE oficina.veiculo auto_increment=1;
