@@ -13,7 +13,7 @@ Projeto de um banco de dados para uma oficina mecânica
 ## Estrutura dos Arquivos e Pastas
 
 - **[schema.sql](schema.sql)** | arquivo com estrutura do Banco de Dados
-- **[populate_ecommerce.sql](populate_ecommerce.sql)** | Arquivo de dados fake
+- **[populate_oficinaDB.sql](populate_oficinaDB.sql)** | Arquivo de dados fake
 - **[queries.sql](queries.sql)** | Queries do para executar no schema
 
 ---
