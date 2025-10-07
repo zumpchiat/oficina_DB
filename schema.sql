@@ -55,9 +55,10 @@ create table oficina.os_servico(
 	id_os_servico int auto_increment primary key,
     id_ordemServico int not null,
     id_servico int not null,
-    horas_trabalhadas float
+    horas_trabalhadas float,
+    constraint fk_id_Serv_ordemServico foreign key (id_ordemServico) references ordemServico(id_ordemServico),
+    constraint fk_id_servico foreign key(id_servico) references servico(id_servico)
 );
-
 -- CREATE TABLE PEÇA 
 create table oficina.produto_peca(
 	id_produto int auto_increment primary key,
