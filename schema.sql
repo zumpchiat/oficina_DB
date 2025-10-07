@@ -30,6 +30,14 @@ create table oficina.veiculo(
     constraint unique_placa unique(placa),
     constraint unique_chassi unique(chassi)
 );
+-- CREATE TABLE SERVICO
+create table oficina.servico(
+	id_servico int auto_increment primary key,
+    nome varchar(30),
+    valor decimal(6,2),
+    descricao varchar(255),
+    horas_trabalhadas float
+);
 
 -- CREATE TABLE ORDEM DE SERVIÇO
 create table oficina.ordemServico(
@@ -43,6 +51,7 @@ create table oficina.ordemServico(
     constraint fk_veiculo foreign key(id_veiculo) references veiculo(id_veiculo)
 );
 
+ALTER TABLE oficina.servico auto_increment=1;
 ALTER TABLE oficina.ordemServico auto_increment=1;
 ALTER TABLE oficina.veiculo auto_increment=1;
 ALTER TABLE oficina.cliente auto_increment=1;
