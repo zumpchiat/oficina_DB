@@ -1,6 +1,6 @@
-# Oficina_DB
+# Sistema de Gerenciamento de Oficina (SGO)
 
-Projeto de um banco de dados para uma oficina mecânica.
+O Projeto consiste na modelagem e implementação de um Sistema de Gerenciamento de Oficina (SGO), utilizando o Modelo **ER** para criar um banco de dados relacional. O objetivo principal é centralizar e rastrear todas as informações operacionais e financeiras de uma oficina mecânica, desde o atendimento ao cliente até a conclusão e faturamento do serviço.
 
 ---
 
