@@ -6,7 +6,7 @@ Projeto de um banco de dados para uma oficina mecânica
 
 ## Modelagem
 
-![err](https://github.c/zumpchiat/ecommerce-sql/blob/main/assets/diagrama.png?raw=true)
+![err](https://github.com/zumpchiat/oficina_DB/blob/main/assets/diagrama_oficina.png?raw=true)
 
 ---
 
