@@ -67,6 +67,17 @@ create table oficina.produto_peca(
     descricao varchar(255)    
 );
 
+-- CREATE TABLE OS_ItemPeca
+create table oficina.os_ItemPeca(
+	id_osItemPeca int auto_increment primary key,
+    id_produto_peca int,
+    id_ordemServico int,
+    quantidade_utilizada int,
+    constraint fk_id_ordemServico foreign key(id_ordemServico) references ordemServico(id_ordemServico),
+    constraint fk_produto_peca foreign key(id_produto_peca) references produto_peca(id_produto)
+);
+
+ALTER TABLE oficina.os_ItemPeca auto_increment=1;
 ALTER TABLE oficina.produto_peca auto_increment=1;
 ALTER TABLE oficina.os_servico auto_increment=1;
 ALTER TABLE oficina.servico auto_increment=1;

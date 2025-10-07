@@ -45,3 +45,12 @@ INSERT INTO oficina.produto_peca (nome, preco, quantidade, descricao) VALUES
 ('Óleo Sintético 5W30', 49.99, 120, 'Litro de óleo 100% sintético 5W30 de alta performance.'),
 ('Disco de Freio - Vent', 189.90, 8, 'Par de discos de freio ventilados para linha Chevrolet.' ),
 ('Fluido de Freio DOT 4', 18.50, 35, 'Frasco de fluido de freio DOT 4 (500ml), recomendado para ABS.' );
+
+-- POPULATE TABLE OS_ItemPeca
+INSERT INTO oficina.os_ItemPeca (id_produto_peca, id_ordemServico, quantidade_utilizada) VALUES
+	( 3, 1, 1 ),
+    ( 1, 3, 1 ),
+    ( 4, 4, 4 ),
+    ( 2, 2, 2 ),
+    ( 6, 3, 1 );
+  
