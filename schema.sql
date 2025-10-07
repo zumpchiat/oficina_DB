@@ -31,5 +31,18 @@ create table oficina.veiculo(
     constraint unique_chassi unique(chassi)
 );
 
+-- CREATE TABLE ORDEM DE SERVIÇO
+create table oficina.ordemServico(
+	id_ordemServico int auto_increment primary key,
+    Dt_Emissao datetime ,
+    Dt_PrevEntrega datetime,
+    Dt_Conclusao datetime,
+    os_status enum("Aberta", "Em_progresso", "Fechada", "Cancelada"),
+    valor_total float,
+    id_veiculo int not null,
+    constraint fk_veiculo foreign key(id_veiculo) references veiculo(id_veiculo)
+);
+
+ALTER TABLE oficina.ordemServico auto_increment=1;
 ALTER TABLE oficina.veiculo auto_increment=1;
 ALTER TABLE oficina.cliente auto_increment=1;
