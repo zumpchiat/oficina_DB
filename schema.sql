@@ -58,7 +58,16 @@ create table oficina.os_servico(
     horas_trabalhadas float
 );
 
+-- CREATE TABLE PEÇA 
+create table oficina.produto_peca(
+	id_produto int auto_increment primary key,
+	nome varchar(50) not null,
+    preco decimal(6,2),
+    quantidade int,
+    descricao varchar(255)    
+);
 
+ALTER TABLE oficina.produto_peca auto_increment=1;
 ALTER TABLE oficina.os_servico auto_increment=1;
 ALTER TABLE oficina.servico auto_increment=1;
 ALTER TABLE oficina.ordemServico auto_increment=1;

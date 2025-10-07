@@ -37,3 +37,11 @@ insert into oficina.os_servico( id_ordemServico, id_servico, horas_trabalhadas) 
     (1, 4, 3),
     (2, 1, 1);
 
+-- POPULATE TABLE PEÇA
+INSERT INTO oficina.produto_peca (nome, preco, quantidade, descricao) VALUES
+('Filtro de Óleo - PH580', 35.90, 50, 'Filtro de óleo lubrificante para motores 1.0 e 1.6 de veículos populares.' ),
+('Pastilha de Freio Diant', 125.50, 15, 'Jogo de pastilhas de freio dianteiro (cerâmica) para sedans médios.' ),
+('Vela de Ignição - BKR6E', 22.00, 80, 'Vela de ignição padrão para carros com injeção eletrônica.' ),
+('Óleo Sintético 5W30', 49.99, 120, 'Litro de óleo 100% sintético 5W30 de alta performance.'),
+('Disco de Freio - Vent', 189.90, 8, 'Par de discos de freio ventilados para linha Chevrolet.' ),
+('Fluido de Freio DOT 4', 18.50, 35, 'Frasco de fluido de freio DOT 4 (500ml), recomendado para ABS.' );
