@@ -35,8 +35,7 @@ create table oficina.servico(
 	id_servico int auto_increment primary key,
     nome varchar(30),
     valor decimal(6,2),
-    descricao varchar(255),
-    horas_trabalhadas float
+    descricao varchar(255)    
 );
 
 -- CREATE TABLE ORDEM DE SERVIÇO

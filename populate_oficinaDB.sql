@@ -23,10 +23,11 @@ insert into oficina.veiculo (placa, marca, modelo, chassi, tipoCombustivel, nume
 ('2024-10-06 08:45:00', '2024-10-12 18:00:00', NULL, 'Aberta', 1800.00, 4);
 
 -- POPULATE TABLE SERVICO
-insert into oficina.servico (nome, valor, descricao, horas_trabalhadas) values
-('Alinhamento e Balanceamento', 180.00, 'Ajuste da geometria de direção e balanceamento das quatro rodas.', 1.0 ),
-('Troca de Pastilhas de Freio', 249.90, 'Substituição das pastilhas de freio dianteiras e verificação do sistema.', 1.5 ),
-('Revisão 10.000 Km', 480.50, 'Check-up completo com troca de óleo, filtros e inspeção de segurança.', 2.5),
-('Reparo em Suspensão', 550.00, 'Diagnóstico e reparo de componentes danificados na suspensão (mão de obra).', 3.0),
-('Troca de Embreagem', 990.00, 'Substituição do kit de embreagem e ajuste do pedal.', 4.5 ),
-('Polimento de Faróis', 85.00, 'Restauração da transparência das lentes dos faróis.', 0.8 );
+insert into oficina.servico (nome, valor, descricao) values
+('Alinhamento e Balanceamento', 180.00, 'Ajuste da geometria de direção e balanceamento das quatro rodas.' ),
+('Troca de Pastilhas de Freio', 249.90, 'Substituição das pastilhas de freio dianteiras e verificação do sistema.'),
+('Revisão 10.000 Km', 480.50, 'Check-up completo com troca de óleo, filtros e inspeção de segurança.'),
+('Reparo em Suspensão', 550.00, 'Diagnóstico e reparo de componentes danificados na suspensão (mão de obra).'),
+('Troca de Embreagem', 990.00, 'Substituição do kit de embreagem e ajuste do pedal.' ),
+('Polimento de Faróis', 85.00, 'Restauração da transparência das lentes dos faróis.' );
+
