@@ -77,6 +77,18 @@ create table oficina.os_ItemPeca(
     constraint fk_produto_peca foreign key(id_produto_peca) references produto_peca(id_produto)
 );
 
+-- CREATE TABLE MECANICO
+create table oficina.mecanico (
+    id_mecanico int auto_increment primary key, 
+    nome varchar(50),
+    crea varchar(10) unique not null,
+    especialidade varchar(50) not null,
+    data_contratacao date,
+    senioridade enum("junior", "pleno", "senior")    
+);
+
+
+ALTER TABLE oficina.mecanico auto_increment=1;
 ALTER TABLE oficina.os_ItemPeca auto_increment=1;
 ALTER TABLE oficina.produto_peca auto_increment=1;
 ALTER TABLE oficina.os_servico auto_increment=1;

@@ -54,3 +54,11 @@ INSERT INTO oficina.os_ItemPeca (id_produto_peca, id_ordemServico, quantidade_ut
     ( 2, 2, 2 ),
     ( 6, 3, 1 );
   
+-- POPULATE TABLE MECANICO
+insert into oficina.mecanico (nome, crea, especialidade, data_contratacao, senioridade) values
+('João da Silva', 'SP12345678', 'Motor e Câmbio', '2015-08-10', 'senior'),
+('Maria Oliveira', 'RJ98765432', 'Elétrica e Injeção', '2022-03-20', 'pleno'),
+('Carlos Souza', 'MG55544433', 'Suspensão e Freios', '2024-01-05', 'junior'),
+('Pedro Santos', 'PR20212223', 'Funilaria e Pintura','2019-11-25', 'pleno'),
+('Ana Ferreira', 'BA70060050', 'Ar Condicionado e Direção', '2023-06-01', 'junior'),
+('Ricardo Alves', 'SC44488800', 'Revisão Geral e Pneus', '2010-04-15', 'senior');
