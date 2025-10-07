@@ -88,7 +88,18 @@ create table oficina.mecanico (
     senioridade enum("junior", "pleno", "senior")    
 );
 
+-- CREATE TABLE OS_MECANICO
+create table os_mecanico(
+	id_os_mecanico int auto_increment primary key,
+    id_mecanico int not null,
+    id_ordemServico int not null,
+    horas_trabalhadas float,
+    constraint fk_id_mecanico foreign key(id_mecanico) references mecanico(id_mecanico),
+    constraint fk_Oid_ordemServico foreign key(id_ordemServico) references ordemServico(id_ordemServico)
+    
+);
 
+ALTER TABLE oficina.os_mecanico auto_increment=1;
 ALTER TABLE oficina.mecanico auto_increment=1;
 ALTER TABLE oficina.os_ItemPeca auto_increment=1;
 ALTER TABLE oficina.produto_peca auto_increment=1;

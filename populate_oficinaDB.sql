@@ -62,3 +62,10 @@ insert into oficina.mecanico (nome, crea, especialidade, data_contratacao, senio
 ('Pedro Santos', 'PR20212223', 'Funilaria e Pintura','2019-11-25', 'pleno'),
 ('Ana Ferreira', 'BA70060050', 'Ar Condicionado e Direção', '2023-06-01', 'junior'),
 ('Ricardo Alves', 'SC44488800', 'Revisão Geral e Pneus', '2010-04-15', 'senior');
+
+-- POPULATE OS_MECANICO
+insert into  oficina.os_mecanico (id_mecanico, id_ordemServico, horas_trabalhadas) values
+( 1, 1, 1.5),
+( 3, 2, 2),
+( 4, 3, 2.5),
+( 1, 2, 2);
